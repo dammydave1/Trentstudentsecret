@@ -101,6 +101,27 @@
       font-size: 1.05rem;
       color: #ff4d6d;
     }
+
+    /* 💛 SpongeBob yellow heart */
+    .heart {
+      color: #FFD93D;
+      font-size: 1.1rem;
+      margin-left: 4px;
+    }
+
+    /* 🧽 Patrick-style wiggle */
+    .wiggle {
+      animation: wiggle 1.6s ease-in-out infinite;
+    }
+
+    @keyframes wiggle {
+      0%   { transform: rotate(0deg); }
+      15%  { transform: rotate(1deg); }
+      30%  { transform: rotate(-1deg); }
+      45%  { transform: rotate(1deg); }
+      60%  { transform: rotate(-1deg); }
+      100% { transform: rotate(0deg); }
+    }
   </style>
 </head>
 
@@ -110,7 +131,7 @@
     <div class="envelope" id="envelope">
       <div class="letter">
 
-        <h1>Hey beautiful! ❤️</h1>
+        <h1>Hey ❤️</h1>
         <p>
           I wanted to ask you this in a cute way 😌<br><br>
           I really enjoy talking to you,<br>
@@ -124,9 +145,9 @@
           <button class="no" onclick="moveNo(event)">No 🙃</button>
         </div>
 
-        <div class="result" id="result">
-          I’m really glad I asked you 🤍.<br>
-          You made my day 💞
+        <div class="result wiggle" id="result">
+          Hehe… this just made me really happy
+          <span class="heart">💛</span>
         </div>
 
       </div>
@@ -151,7 +172,8 @@
       const y = Math.random() * 220 - 110;
       const r = Math.random() * 30 - 15;
 
-      btn.style.transform = `translate(${x}px, ${y}px) rotate(${r}deg)`;
+      btn.style.transform =
+        `translate(${x}px, ${y}px) rotate(${r}deg)`;
     }
   </script>
 
