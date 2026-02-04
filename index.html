@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hey You 💗</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  background: white;
+  width: 320px;
+  padding: 26px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+p {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.next {
+  margin-top: 25px;
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #ff4d6d;
+  color: white;
+}
+
+.next:hover {
+  transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <p>
+    Okay… this is a little spontaneous, but go with me 😌<br><br>
+    I have a question for you 🙂
+  </p>
+
+  <p style="font-size:0.9rem; color:#777;">
+    (tap next)
+  </p>
+
+  <button class="next" onclick="goNext()">Next ➜</button>
+</div>
+
+<script>
+function goNext() {
+  window.location.href = "valentine.html";
+}
+</script>
+
+</body>
+</html>
